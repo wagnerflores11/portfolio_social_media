@@ -1,0 +1,96 @@
+* {
+  margin: 0;
+  padding: 0;
+  border: 0;
+}
+
+body {
+  color: white;
+  background-color: #3f2f47;
+  font-family: "Roboto", sans-serif;
+}
+
+header {
+  padding: 32px;
+  /* topo sobre/exp/case */
+  background: rgba(0, 0, 0, 0.3);
+}
+
+.links {
+  text-align: center;
+}
+
+.links a {
+  color: white;
+  font-size: 18px;
+  line-height: 28px;
+  margin: 0 16px;
+  padding-bottom: 3px;
+  text-decoration: none;
+}
+
+.links a:hover {
+  color: yellow;
+  transition: color 0.2s;
+}
+
+#photo {
+  text-align: center;
+  padding: 32px;
+}
+
+#photo img {
+  border-radius: 50%;
+  border: 2px solid yellow;
+  margin-bottom: 32px;
+  height: 300px;
+}
+
+#photo h1 {
+  font-size: 42px;
+  line-height: 52px;
+  font-weight: bold;
+}
+
+#photo h2 {
+  font-size: 22px;
+  line-height: 32px;
+  font-weight: normal;
+  margin-top: 8px;
+  opacity: 0.8;
+}
+
+#links-contacts a {
+  border-bottom: 2px solid yellow;
+}
+
+#links-contacts a img {
+  /*icones das redes*/
+  height: 20px;
+  margin-left: 5px;
+}
+
+/*====== aba Cases - Cards */
+
+.cards {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.card {
+  background-color: #ad9cb6;
+}
+
+.card-img-container img {
+  width: 100%;
+}
+
+.card-content,
+.card-info {
+  padding: 24px;
+}
+
+.card-info {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
