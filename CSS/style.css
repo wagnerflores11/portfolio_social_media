@@ -16,6 +16,8 @@ header {
   background: rgba(0, 0, 0, 0.3);
 }
 
+/* ------Home-----*/
+
 .links {
   text-align: center;
 }
@@ -34,31 +36,44 @@ header {
   transition: color 0.2s;
 }
 
-#photo {
+/*-----------photo profile-----*/
+
+#photo-profile {
   text-align: center;
+  align-items: center;
   padding: 32px;
 }
 
-#photo img {
-  border-radius: 50%;
+#photo-profile img {
+  border-radius: 50px 50px 50px 50px;
   border: 2px solid yellow;
-  margin-bottom: 32px;
+  margin-bottom: 30px;
   height: 300px;
 }
 
-#photo h1 {
+#photo-profile h1 {
   font-size: 42px;
   line-height: 52px;
   font-weight: bold;
 }
 
-#photo h2 {
+#photo-profile h2 {
   font-size: 22px;
   line-height: 32px;
   font-weight: normal;
-  margin-top: 8px;
+  margin-top: 2px;
   opacity: 0.8;
 }
+
+#adress a {
+    border-bottom: 2px solid yellow;
+  }
+  
+#adress a img {
+    margin-top: auto;
+    height: 20px;
+    margin-left: 5px;
+  }
 
 #links-contacts a {
   border-bottom: 2px solid yellow;
@@ -69,12 +84,68 @@ header {
   height: 20px;
   margin-left: 5px;
 }
+/*---------End Home-----------*/
+
+
+/*-----Call Resumo-------*/
+.resumo {
+  background-attachment: fixed;
+  background-color: #645862;
+  background-image: url(/images/back.jpg);
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: white;
+  cursor: default;
+  text-align: center;
+  width: 100%;
+  
+}
+.resumo-back {
+  padding: 40px 0px;
+  background-color: RGBA(15, 5, 20, 0.84);
+}
+.sub-text {
+    text-align: center;
+    margin: auto;
+}
+.sub-text h3 {
+  margin-top: 0px;
+  margin-bottom: 20px;
+  border-bottom: 2px solid #eb233c;
+  display: inline-block;
+  line-height: 35px;
+  text-align: left;
+}
+.sub-button a {
+  padding: 12px 35px;
+  color: #ffffff;
+  text-decoration: none;
+  display: inline-block;
+  border-radius: 25px 25px 25px 25px;
+  font-size: 15px;
+  background-color: #eb233c;
+  margin-top: 30px;
+  cursor: pointer;
+  
+}
+.sub-button a:hover {
+  text-decoration: none;
+  color: yellow;
+  transition: 0.2ms color;
+}
+/*-----End Resumo-------*/
+
+
 
 /*====== aba Cases - Cards */
 
 .cards {
   max-width: 800px;
   margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
 }
 
 .card {
@@ -91,6 +162,25 @@ header {
 }
 
 .card-info {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
 }
+
+/*-----------------end ----------*/
+
+/*-----------------resumo cards-----*/
+.coluna{
+    float: left;
+    width: 33.33%;
+    max-width: auto;
+    max-height: auto;
+    width: 374px;
+    height: auto;
+    
+}    
+  .row::after {
+    content: "";
+    clear: both;
+    display: table;
+    
+  }
