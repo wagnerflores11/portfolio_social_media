@@ -3,6 +3,9 @@
   padding: 0;
   border: 0;
 }
+html {
+  scroll-behavior: auto;
+}
 
 body {
   color: white;
@@ -36,6 +39,20 @@ header {
   transition: color 0.2s;
 }
 
+/* Copyright
+--------------------------------------------------------------------------------------------------------------- */
+.copyright{
+  margin-top: 20px;
+  padding:20px 0;
+  text-align: center;
+  color: rgb(146, 146, 146);
+}
+
+.copyright a {
+  text-decoration: none;
+}
+
+
 /*-----------photo profile-----*/
 
 #photo-profile {
@@ -66,14 +83,14 @@ header {
 }
 
 #adress a {
-    border-bottom: 2px solid yellow;
-  }
-  
+  border-bottom: 2px solid yellow;
+}
+
 #adress a img {
-    margin-top: auto;
-    height: 20px;
-    margin-left: 5px;
-  }
+  margin-top: auto;
+  height: 20px;
+  margin-left: 5px;
+}
 
 #links-contacts a {
   border-bottom: 2px solid yellow;
@@ -85,7 +102,6 @@ header {
   margin-left: 5px;
 }
 /*---------End Home-----------*/
-
 
 /*-----Call Resumo-------*/
 .resumo {
@@ -99,15 +115,14 @@ header {
   cursor: default;
   text-align: center;
   width: 100%;
-  
 }
 .resumo-back {
   padding: 40px 0px;
   background-color: RGBA(15, 5, 20, 0.84);
 }
 .sub-text {
-    text-align: center;
-    margin: auto;
+  text-align: center;
+  margin: auto;
 }
 .sub-text h3 {
   margin-top: 0px;
@@ -127,7 +142,6 @@ header {
   background-color: #eb233c;
   margin-top: 30px;
   cursor: pointer;
-  
 }
 .sub-button a:hover {
   text-decoration: none;
@@ -136,23 +150,29 @@ header {
 }
 /*-----End Resumo-------*/
 
-
-
 /*====== aba Cases - Cards */
 
-.cards {
+#grid h1{
+  margin: 10px 10px 10px 10px;
+  text-align: center;
+  align-items: center;
+}
+
+
+.cards  {
   max-width: 800px;
   margin: 0 auto;
   display: grid;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: 1fr 1fr 1fr;
   gap: 20px;
+
 }
 
 .card {
-  background-color: #ad9cb6;
+  background-color: #7159c1;
 }
 
-.card-img-container img {
+.card-image-container img {
   width: 100%;
 }
 
@@ -163,24 +183,44 @@ header {
 
 .card-info {
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-columns: 1fr 1fr;
 }
 
+.card-link {
+    background-color: #7159c1;
+    filter: brightness(90%);
+    padding: 5px 20px;
+    border-radius: 20px;
+    align-items: center;
+    
+}
+
+.card-link a {
+  text-decoration: none;
+  color: white;
+  
+}
+
+.card-link a:hover {
+  text-decoration: none;
+  color: yellow;
+  transition: 0.2ms color;
+}
 /*-----------------end ----------*/
 
 /*-----------------resumo cards-----*/
-.coluna{
-    float: left;
-    width: 33.33%;
-    max-width: auto;
-    max-height: auto;
-    width: 374px;
-    height: auto;
-    
-}    
-  .row::after {
-    content: "";
-    clear: both;
-    display: table;
-    
-  }
+.coluna {
+  float: left;
+  width: 33.33%;
+  max-width: auto;
+  max-height: auto;
+  width: 374px;
+  height: auto;
+}
+.row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+
